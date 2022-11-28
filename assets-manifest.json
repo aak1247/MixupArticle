@@ -1,0 +1,19 @@
+{
+  "publicPath": "/MixupArticle/",
+  "entries": {
+    "main": [
+      "js/framework.js",
+      "js/533.js",
+      "css/main.css",
+      "js/main.js"
+    ]
+  },
+  "pages": {
+    "index": [
+      "js/60.js",
+      "css/index.css",
+      "js/index.js"
+    ]
+  },
+  "assets": {}
+}
