@@ -1,0 +1,75 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  padding: 50px;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 120px;
+    }
+    p {
+      margin: 20px 0;
+      text-align: center;
+      font-size: 2.6rem;
+    }
+    :global {
+      .ant-input {
+        width: 40vw;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 10px;
+    font-size: 0.9rem;
+  }
+
+  :global {
+    p {
+      margin: 0;
+    }
+  }
+}
+
+
+.link {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 35px;
+  background: var(--primary);
+  box-shadow: 0 5px 10px 0 #ddd;
+  color: white;
+  font-size: calc(10px + 2vmin);
+}
+
+
+@mixin input {
+  width: 40vw;
+}
+
+.label {
+  // color: white;
+}
+
+.trueText {
+  @include input;
+}
+
+.mixUp {
+  @include input;
+}
